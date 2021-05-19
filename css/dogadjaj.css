@@ -1,0 +1,94 @@
+body {
+    background-image: url("../img/neka-pocetna-header-cover-full.png");
+    background-color: #cccccc;
+    width: 100%;
+    background-size: 100%;
+}
+
+.container {
+    padding: 7%;
+    min-height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container form {
+    color: white;
+    width: 500px;
+    margin-left: -20%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box {
+    width: 750px;
+    margin-left: -5%;
+}
+
+.container table {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.kreiraj {
+    display: flex;
+    justify-content: center;
+}
+
+.dugme {
+    margin: 0;
+    color: #fff3f3;
+    background-color: #5a0f0f;
+    border-radius: 5px;
+    padding: 2%;
+    font-size: large;
+}
+
+.dugme2 {
+    color: #fff3f3;
+    margin-left: 48%;
+    background-color: #5a0f0f;
+    border-radius: 5px;
+    padding: 2%;
+    font-size: medium;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.NazadnaDogadjaj {
+    color: #fff3f3;
+    margin: 0%;
+    background-color: #5a0f0f;
+    border-radius: 5px;
+    padding: 2%;
+    font-size: medium;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+}
+
+.box h4 {
+    color: white;
+}
+
+.container table {
+    margin-left: -10%;
+}
+
+.kreiraj {
+    position: relative;
+    left: -47%;
+}
+
+.link-right {
+    display: flex;
+    justify-content: flex-end;
+}

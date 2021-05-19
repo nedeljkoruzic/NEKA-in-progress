@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anketa</title>
+
+</head>
+
+<body style="background-color: rgb(132, 17, 17);">
+    <script>
+        function getVote(int) {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("anketa").innerHTML = this.responseText;
+                }
+            }
+            xmlhttp.open("GET", "anketa.php?vote=" + int, true);
+            xmlhttp.send();
+        }
+    </script>
+    </head>
+
+
+
+    <div id="anketa" style="justify-content: center; display: block; position: relative; padding-top: 15%; padding-left: 25%;">
+        <h3 style="justify-content: center; font-size: 45px;">Da li pratite humanitarne dogadjaje?</h3>
+        <form style="font-size: 40px;">
+            Da: <input type="radio" name="vote" value="0" onclick="getVote(this.value)">
+            <br> Ne: <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+        </form>
+    </div>
+
+
+
+</html>

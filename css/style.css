@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'PublicSans-BLACK';
+    src: url(../Public_Sans/static/PublicSans-Black.ttf);
+}
+
+@font-face {
+    font-family: 'PublicSans-BLACK-italic';
+    src: url(../Public_Sans/static/PublicSans-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: 'PublicSans-BOLD';
+    src: url(../Public_Sans/static/PublicSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'PublicSans-ExtraBOLD';
+    src: url(../Public_Sans/static/PublicSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'PublicSans-Light';
+    src: url(../Public_Sans/static/PublicSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'PublicSans-Light-italic';
+    src: url(../Public_Sans/static/PublicSans-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: 'PublicSans-Medium';
+    src: url(../Public_Sans/static/PublicSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'PublicSans-Regular';
+    src: url(../Public_Sans/static/PublicSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PublicSans-Thin';
+    src: url(../Public_Sans/static/PublicSans-Thin.ttf);
+}
+
+.background img {
+    width: 100%;
+}
+
+.logo-LeftTop {
+    display: contents;
+}
+
+.logo-LeftTop img {
+    position: absolute;
+    top: 3%;
+    margin-left: 3%;
+    height: 12%;
+}
+
+.navbar {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    width: 90%;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 3%;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-family: 'PublicSans-Medium';
+    font-size: large;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 65px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(93, 2, 2);
+}
+
+.tekst1 {
+    display: contents;
+}
+
+.tekst1 p {
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-family: 'publicSans-ExtraBOLD';
+    font-size: 45px;
+    color: white;
+}
+
+.tekst2 {
+    display: contents;
+}
+
+.tekst2 p {
+    position: absolute;
+    top: 70%;
+    left: 4%;
+    font-family: 'publicSans-BOLD';
+    font-size: 30px;
+    color: white;
+}
+
+.container {
+    display: contents;
+}
+
+.container a {
+    position: absolute;
+    top: 6%;
+    left: 85%;
+    font-family: 'PublicSans-BOLD';
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.container a::before {
+    position: absolute;
+    padding: 2px;
+    content: '';
+    height: 3%;
+    width: 3%;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+}
+
+.container a::after {
+    position: absolute;
+    content: '';
+    height: 3%;
+    width: 3%;
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+}
+
+.container a:hover::before {
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+    border-right: none;
+    border-bottom: none;
+    transition: height 0.2s linear, width 0.2s linear 0.2s;
+}
+
+.container a:hover::after {
+    padding: 2px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+    border-left: none;
+    border-top: none;
+    transition: height 0.2s linear, width 0.2s linear 0.2s;
+}
+
+.popup {
+    background: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popup-content {
+    height: 50%;
+    width: 50%;
+    background: url(../img/neka-rs-desktop-mat-0001-pocetna-vrh-desni-deo-i-deo-transparentnog-header-menija.png);
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.popup-content a {
+    position: absolute;
+    font-family: 'PublicSans-BOLD';
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    left: 42%;
+}
+
+input {
+    margin: 70px auto;
+    display: block;
+    width: 50%;
+    padding: 15px;
+    border: 1px solid gray;
+}
+
+.close {
+    position: absolute;
+    width: 6%;
+    height: auto;
+    background-color: transparent;
+    left: 93%;
+    top: 4%;
+    cursor: pointer;
+}
